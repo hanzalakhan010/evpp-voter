@@ -279,8 +279,8 @@ const ConfirmScreen: React.FC<{
 
   const dash = 2 * Math.PI * 44;
   return (
-    <div className="screen fade-in grid grid-cols-1 md:grid-cols-[1fr_1.1fr] grid-paper min-h-0">
-      <div className="p-6 lg:p-10 flex flex-col justify-center min-h-0 overflow-y-auto">
+    <div className="screen fade-in flex flex-col sm:flex-row grid-paper min-h-0">
+      <div className="p-6 lg:p-10 sm:flex-1 sm:basis-0 flex flex-col justify-center min-h-0 overflow-y-auto">
         <div className="font-bold text-xs uppercase tracking-widest text-gray-600">Final step</div>
         <h2 className="font-display leading-none mt-1 text-left" style={{ fontSize: "clamp(40px,5.5vw,72px)" }}>Almost there!</h2>
         <p className="font-hand text-base lg:text-lg text-gray-700 mt-3 max-w-md">Press &amp; hold the big button to cast. Lift early to cancel — once cast, your picks are final.</p>
@@ -307,7 +307,7 @@ const ConfirmScreen: React.FC<{
         </div>
       </div>
 
-      <div className="relative flex items-center justify-center hatch-blue overflow-hidden min-h-0" style={{ background: "linear-gradient(135deg, #1d4ed8, #2563eb)", minHeight: 280 }}>
+      <div className="relative flex-1 sm:basis-0 sm:flex-[1.1] flex items-center justify-center hatch-blue overflow-hidden min-h-0" style={{ background: "linear-gradient(135deg, #1d4ed8, #2563eb)", minHeight: 260 }}>
         <div className="relative select-none" style={{ width: "min(340px, 70vmin)", height: "min(340px, 70vmin)" }}
           onMouseDown={start} onMouseUp={stop} onMouseLeave={stop}
           onTouchStart={start} onTouchEnd={stop}>

@@ -1,5 +1,30 @@
 @import "tailwindcss";
 
+/* self-hosted fonts (latin subset, variable woff2) — always available offline */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url('./assets/fonts/caveat.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Patrick Hand';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./assets/fonts/patrick-hand.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500 800;
+  font-display: swap;
+  src: url('./assets/fonts/plus-jakarta-sans.woff2') format('woff2');
+}
+
 :root {
   --ink: #0b1220;
   --paper: #f7f5ef;
