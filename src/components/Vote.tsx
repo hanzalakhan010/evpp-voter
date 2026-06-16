@@ -200,7 +200,7 @@ const ProgressToast: React.FC<{
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
-    <div className="screen fade-in relative grid-paper">
+    <div className="screen fade-in grid-paper">
       {/* faded next-race preview behind */}
       <div className="absolute inset-0 opacity-25 pointer-events-none overflow-hidden">
         <div className="px-10 py-8 grid grid-cols-3 gap-5 max-w-[1000px] mx-auto mt-20">
@@ -337,7 +337,7 @@ const SuccessScreen: React.FC<{
   voterName: string;
   onRestart: () => void;
 }> = ({ postTitles, xp, level, voterName, onRestart }) => (
-  <div className="screen fade-in relative overflow-hidden hatch-blue text-center"
+  <div className="screen fade-in overflow-hidden hatch-blue text-center"
     style={{ background: "radial-gradient(ellipse at center, #2563eb 0%, #1d4ed8 60%, #1e3a8a 100%)" }}>
     <Confetti count={120} />
     {/* sun rays */}
