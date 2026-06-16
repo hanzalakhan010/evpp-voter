@@ -60,6 +60,11 @@ h2 {
   text-align: inherit;
 }
 
+/* Component classes live in the components layer so Tailwind utilities
+   (a later cascade layer, e.g. responsive sm:flex-row) can override them.
+   Unlayered rules would otherwise always win over layered utilities. */
+@layer components {
+
 .font-display {
   font-family: 'Caveat', cursive;
 }
@@ -310,4 +315,6 @@ h2 {
   background: var(--paper);
   background-image: radial-gradient(rgba(0, 0, 0, 0.08) 1px, transparent 1.4px);
   background-size: 22px 22px;
+}
+
 }
